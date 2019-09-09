@@ -1,6 +1,6 @@
 steps:
   - name: 'gcr.io/cloud-builders/go'
-    env: ['GO111MODULE=on']
+    env: ['GO111MODULE=on', 'PROJECT_ROOT=hello']
     args: ['mod', 'vendor']
   - name: 'gcr.io/cloud-builders/go'
     args: ['install', './cmd/grpc/main.go']
