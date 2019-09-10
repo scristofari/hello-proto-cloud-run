@@ -13,7 +13,7 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ["push", "gcr.io/$PROJECT_ID/hello:$REVISION_ID"]
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['container', 'images', 'add-tag', "gcr.io/$PROJECT_ID/hello:$REVISION_ID", "gcr.io/$PROJECT_ID/hello:latest"]
+    args: ['container', 'images', 'add-tag', "gcr.io/$PROJECT_ID/hello:$REVISION_ID", "gcr.io/$PROJECT_ID/hello:latest", '--quiet']
   - name: 'gcr.io/cloud-builders/gcloud'
     args: [
       "beta",
@@ -26,5 +26,6 @@ steps:
       'managed',
       '--region',
       'europe-west1',
-      '--allow-unauthenticated'
+      '--allow-unauthenticated',
+      '--quiet'
     ]

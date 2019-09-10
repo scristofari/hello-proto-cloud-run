@@ -4,7 +4,6 @@
     <list default="true" id="8f097006-84ab-49b8-9f84-a8c85497ab36" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudbuild.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/grpc/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/grpc/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
