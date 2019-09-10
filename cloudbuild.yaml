@@ -4,10 +4,10 @@ steps:
     args: ['mod', 'vendor']
   - name: 'gcr.io/cloud-builders/go'
     args: ['install', './cmd/grpc/main.go']
-    env: ['PROJECT_ROOT=hello']
+    env: ['GO111MODULE=on', 'PROJECT_ROOT=hello']
   - name: 'gcr.io/cloud-builders/go'
     args: ['test','./cmd/grpc']
-    env: ['PROJECT_ROOT=hello']
+    env: ['GO111MODULE=on','PROJECT_ROOT=hello']
   - name: 'gcr.io/cloud-builders/docker'
     args: ["build", "-t", "gcr.io/$PROJECT_ID/hello:$REVISION_ID", "."]
   - name: 'gcr.io/cloud-builders/docker'
