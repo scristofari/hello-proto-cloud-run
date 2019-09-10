@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f097006-84ab-49b8-9f84-a8c85497ab36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmd/grpc/main_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/grpc/main_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmd/cli/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudbuild.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

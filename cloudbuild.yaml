@@ -27,5 +27,4 @@ steps:
       '--region',
       'europe-west1',
       '--allow-unauthenticated',
-      '--quiet'
     ]
