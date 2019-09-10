@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f097006-84ab-49b8-9f84-a8c85497ab36" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cloudbuild.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/cloudbuild.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/grpc/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/grpc/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protobuf/hello.pb.go" beforeDir="false" afterPath="$PROJECT_DIR$/protobuf/grpchello/hello.pb.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protobuf/hello.proto" beforeDir="false" afterPath="$PROJECT_DIR$/protobuf/grpchello/hello.proto" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +40,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/protobuf/helloword" />
       <recent name="$PROJECT_DIR$/cmd/grpc" />
       <recent name="$PROJECT_DIR$/proto" />
     </key>
