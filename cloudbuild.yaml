@@ -15,4 +15,16 @@ steps:
   - name: 'gcr.io/cloud-builders/gcloud'
     args: ['container', 'images', 'add-tag', "gcr.io/$PROJECT_ID/hello:$REVISION_ID", "gcr.io/$PROJECT_ID/hello:latest"]
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ["beta", "run", "deploy", "helloproto", "--image", "gcr.io/$PROJECT_ID/hello:$REVISION_ID", '--platform', 'managed']
+    args: [
+      "beta",
+      "run",
+      "deploy",
+      "helloproto",
+      "--image",
+      "gcr.io/$PROJECT_ID/hello:$REVISION_ID",
+      '--platform',
+      'managed',
+      '--region',
+      'europe-west1',
+      '--allow-unauthenticated'
+    ]

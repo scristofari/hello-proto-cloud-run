@@ -6,14 +6,11 @@ import (
 	"fmt"
 	"log"
 	"net"
+	"os"
 
 	grcphello "github.com/scristofari/helloproto/protobuf/grpchello"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
-)
-
-var (
-	addr = flag.String("addr", ":50051", "Network host:port to listen on for gRPC connections.")
 )
 
 // server is used to implement grcphello.GreeterServer.
@@ -27,8 +24,13 @@ func (s *server) SayHello(ctx context.Context, in *grcphello.HelloRequest) (*grc
 
 func main() {
 	flag.Parse()
-	fmt.Println("Listen on: " + *addr)
-	lis, err := net.Listen("tcp", *addr)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8080"
+	}
+
+	fmt.Println("Listen on port: " + port)
+	lis, err := net.Listen("tcp", ":"+port)
 	if err != nil {
 		log.Fatalf("failed to listen: %v", err)
 	}
